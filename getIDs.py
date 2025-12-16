@@ -16,7 +16,7 @@ if Response.status_code == 200:
             "concurrent_players": Game["concurrent_in_game"]
         })
         
-    with open("SteamGames.json", "w", encoding = "utf-8") as f:
+    with open("SteamGamesGoodV.json", "w", encoding = "utf-8") as f:
         json.dump(FilteredData, f, indent = 4)
 else:
     print("There was some error with request")
