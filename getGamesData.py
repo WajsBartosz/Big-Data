@@ -5,9 +5,9 @@ import time
 def RequestWithRetries(URL, Retries = 10, Delay = 5):
     for Attempt in range(1, Retries + 1):
         try:
-            response = requests.get(URL, timeout=10)
-            response.raise_for_status()
-            return response
+            Response = requests.get(URL, timeout=10)
+            Response.raise_for_status()
+            return Response
         except Exception as e:
             print(f"Try {Attempt}/{Retries} failed: {e}")
             if Attempt < Retries:
