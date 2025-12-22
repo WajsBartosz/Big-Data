@@ -1,0 +1,1 @@
+SELECT round(avg(`NumberOfDLC`), 2) as `AverageNumberOfDLC` FROM `SteamGamesData.GamesDataFromSteamAPI`

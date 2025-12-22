@@ -1,7 +1,9 @@
 
 # Big Data project
 
-Here is a small instruction how to run scripts in order to generate your own JSON instead of using this in project.
+The purpose of this project is to fetch the data of most popular games from Steam using Steam API (https://partner.steamgames.com/doc/webapi/ISteamApps) and extract data that can be represented in any form of report (like Looker Studio). There are already created queries for ready data to report, but you can create your personal queries.
+
+Below is a small instruction how to run scripts in order to generate your own JSON instead of using this in project.
 
 ## 1. Run Python script GetIDs.py
 In order to do this, please type in terminal:
@@ -32,6 +34,8 @@ _Keep in mind that this script can take a couple of minutes (the more games you 
 ## 4. Once the script is finished you can use page https://codebeautify.org/json-to-jsonl-converter to convert JSON to JSONL
 
 ## 5. When you have JSONL file ready, you can upload it to GCP Big Query
+
+## 6. If you would like to create a report in Looker studio you can create views using queries from Queries folder (or create your own queries to retrieve different data).
 
 
 
